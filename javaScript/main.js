@@ -64,7 +64,6 @@ const calculator = {
 
 const result = calculator.plus(4, 3);
 console.log(result);
-*/
 
 const title = document.getElementById("title");
 title.innerHTML = "change text";
@@ -72,3 +71,19 @@ title.style.color = "red";
 
 title = document.querySelector("#title");
 console.log(title);
+
+function handleResize(event) {
+    console.log(event);
+}
+
+//handleResize()는 지금 바로 호출 handleResize는 내가 원할때
+window.addEventListener("resize", handleResize);
+*/
+
+const title = document.querySelector("#title");
+
+function handleClick() {
+    title.style.color = "red";
+}
+
+window.addEventListener("click", handleClick);
