@@ -1,3 +1,4 @@
+/*
 alert('hello, World');
 console.log('hello, World');
 
@@ -63,3 +64,11 @@ const calculator = {
 
 const result = calculator.plus(4, 3);
 console.log(result);
+*/
+
+const title = document.getElementById("title");
+title.innerHTML = "change text";
+title.style.color = "red";
+
+title = document.querySelector("#title");
+console.log(title);
