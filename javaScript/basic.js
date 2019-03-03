@@ -78,12 +78,10 @@ function handleResize(event) {
 
 //handleResize()는 지금 바로 호출 handleResize는 내가 원할때
 window.addEventListener("resize", handleResize);
-*/
-
-const title = document.querySelector("#title");
 
 function handleClick() {
     title.style.color = "red";
 }
 
 window.addEventListener("click", handleClick);
+*/
