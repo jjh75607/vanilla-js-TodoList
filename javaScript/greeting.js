@@ -11,11 +11,29 @@ function printGreeting(text) {
     greeting.innerHTML = `Hello ${text}`;
 }
 
+function handleSubmit(event) {
+    event.preventDefault();
+
+    const currentValue = input.value;
+
+    printGreeting(currentValue);
+    saveName(currentValue);
+}
+
+function askForName() {
+    form.classList.add(SHOWING_CN);
+    form.addEventListener("submit", handleSubmit);
+}
+
+function saveName(name) {
+    localStorage.setItem(USER_LOCALSTORAGE, name);
+}
+
 function loadName() {
     const currentUser = localStorage.getItem(USER_LOCALSTORAGE);
 
     if (currentUser === null) {
-        
+        askForName();
     }
     else {
         printGreeting(currentUser);
