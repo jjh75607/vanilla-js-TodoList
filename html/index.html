@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Something</title>
     <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
-    <div class="js-clock">
+    <span class="js-weather weather"></span>
+
+    <div class="js-clock clock">
         <h1>00:00</h1>
     </div>
 
     <form class="js-form form">
-        <input type="text" placeholder="Whar is your name?">
+        <input type="text" placeholder="Whar is your name?" class="userName">
     </form>
 
-    <h4 class="js-greetings greetings"></h4>
+    <h4 class="js-greetings greetings alignCenter"></h4>
 
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do">
+    <form class="js-toDoForm alignCenter">
+      <div><h3>What is your main focus for today</h3></div>
+      <input type="text">
     </form>
 
-    <ul class="js-toDoList"></ul>
-
-    <span class="js-weather"></span>
+    <ul class="js-toDoList alignCenter toDoList"></ul>
 
     <script src="../javaScript/todo.js"></script>
     <script src="../javaScript/clock.js"></script>
@@ -30,4 +33,5 @@
     <script src="../javaScript/bg.js"></script>
     <script src="../javaScript/weather.js"></script>
 </body>
+
 </html>

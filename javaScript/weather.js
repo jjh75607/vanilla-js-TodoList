@@ -11,7 +11,7 @@ function getWeather(lat, lng) {
             const temperatue = json.main.temp;
             const plcae = json.name;
 
-            weather.innerText = `${temperatue} @ ${plcae}`;
+            weather.innerText = `${temperatue}도 \n @${plcae}`;
         });
 }
 
