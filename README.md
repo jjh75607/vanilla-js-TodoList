@@ -2,6 +2,6 @@
 
 <ol>
     <li>html</li>
-    <li>css</li>
+    <li>css - 최소한</li>
     <li>javaScript</li>
 </ol>
